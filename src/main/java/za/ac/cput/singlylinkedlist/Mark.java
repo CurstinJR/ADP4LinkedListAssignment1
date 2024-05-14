@@ -1,4 +1,4 @@
-package za.ac.cput;
+package za.ac.cput.singlylinkedlist;
 
 public class Mark {
     private double T1;

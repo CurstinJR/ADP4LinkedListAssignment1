@@ -1,4 +1,4 @@
-package za.ac.cput;
+package za.ac.cput.singlylinkedlist;
 
 public class SinglyLinkedList<T> {
     private Node<T> head;
@@ -28,7 +28,7 @@ public class SinglyLinkedList<T> {
     }
 
     // Add element to the end of the list
-    public void add(T data) {
+    public void append(T data) {
         Node<T> newNode = new Node<>(data);
         if (head == null) {
             head = newNode;
@@ -42,43 +42,8 @@ public class SinglyLinkedList<T> {
         size++;
     }
 
-    // Remove element by index
-    public T remove(int index) {
-        if (index >= size || index < 0) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
-        }
-        Node<T> current = head;
-        T data;
-        if (index == 0) {
-            data = head.data;
-            head = head.next;
-        } else {
-            Node<T> previous = null;
-            for (int i = 0; i < index; i++) {
-                previous = current;
-                current = current.next;
-            }
-            data = current.data;
-            previous.next = current.next;
-        }
-        size--;
-        return data;
-    }
-
     public Node<T> getHead() {
         return head;
-    }
-
-    // Get element by index
-    public T get(int index) {
-        if (index >= size || index < 0) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
-        }
-        Node<T> current = head;
-        for (int i = 0; i < index; i++) {
-            current = current.next;
-        }
-        return current.data;
     }
 
     // Check if the list is empty

@@ -1,4 +1,4 @@
-package za.ac.cput;
+package za.ac.cput.singlylinkedlist;
 
 public class Student {
     private String name;

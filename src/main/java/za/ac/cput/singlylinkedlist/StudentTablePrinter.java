@@ -1,4 +1,4 @@
-package za.ac.cput;
+package za.ac.cput.singlylinkedlist;
 
 public class StudentTablePrinter {
     public static void printStudentList(SinglyLinkedList<Student> studentList) {

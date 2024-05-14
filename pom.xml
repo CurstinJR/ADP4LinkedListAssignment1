@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -24,7 +24,8 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>za.ac.cput.Main</mainClass> <!-- Replace with your main class -->
+                            <mainClass>za.ac.cput.singlylinkedlist.Main
+                            </mainClass> <!-- Replace with your main class -->
                         </manifest>
                     </archive>
                 </configuration>
